@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Samenbeng Group Travel & Tour – Helping Ghanaians travel to Dubai, Canada, UK, USA, and Australia.">
+
+<!-- Inside <head> -->
+<link rel="icon" type="image/png" href="travel images/samebeng logo.png" />
+<title>Samebeng Travel & Tour</title>
+
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+     <h1>Samebeng Travel & Tour Agency</h1> 
+      <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="image.dubai.jpg">Home</a></li>
+        <li><a href="https://www.instagram.com/samenbeng_group?igsh=ancxNDYweHcyb2Rh">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+<!-- Include Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+<header class="hero-slider">
+  <div class="slide active" style="background-image: url('image.dubai.jpg')"></div>
+  <div class="slide" style="background-image: url('canada.jpg')"loading="lazy" alt="Tour Image"></div>
+  <div class="slide" style="background-image: url('newyork.jpg')"loading="lazy" alt="Tour Image"></div>
+  <div class="slide" style="background-image: url('sky\ dubai.jpg')"loading="lazy" alt="Tour Image"></div>
+  <div class="slide" style="background-image: url('image\ of\ kuwait.jpg')"loading="lazy" alt="Tour Image"></div>
+  <div class="slide" style="background-image: url('Dubai\ high\ buildings.jpg')"loading="lazy" alt="Tour Image"></div>
+  <div class="slide" style="background-image: url('midnight.jpg')"loading="lazy" alt="Tour Image"></div>
+ <div class="slide" style="background-image: url('street\ at\ night.jpg')"loading="lazy" alt="Tour Image"></div> 
+  <div class="slide" style="background-image: url('dubai\ margin.jpg')"loading="lazy" alt="Tour Image"> </div>
+
+  
+
+  <div class="overlay-content">
+    <h1 class="brand-heading">Samebeng Travel & Tour</h1>
+    <p class="tagline">Discover Luxury Destinations with Confidence</p>
+    <a href="https://wa.me/2330530304612" target="_blank" class="cta-btn">Contact Us on WhatsApp</a>
+  </div>
+</header>
+
+
+
+
+
+  <!-- Image + About Text -->
+  <div class="about-container">
+    <div class="about-image">
+      <img src="travel images/Tour Success.jpg" alt="Ghanaians Traveling Abroad">
+    </div>
+
+    <div class="about-text">
+      <h2>Who We Are</h2>
+      <p><strong>Samenbeng Travel & Tour</strong> empowers Ghanaians and Africans to explore travel and work opportunities in <strong>Dubai, Canada, UK, USA, and Australia</strong>.</p>
+      <p>We provide full support — from visa guidance to job assistance — so you can confidently start your global journey.</p>
+      <a href="#contact" class="btn">Talk to Us</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Services -->
+  <section id="services" class="section dark">
+    <h2>Our Services</h2>
+    <ul class="service-list">
+      <li><i class="fas fa-plane"></i> Visa Assistance</li>
+      <li><i class="fas fa-briefcase"></i> Job Support Abroad</li>
+      <li><i class="fas fa-home"></i> Accommodation Help</li>
+      <li><i class="fas fa-users"></i> Tour Packages</li>
+    </ul>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="travel images/visa application.jpg" alt="passport and birthcertificate" loading="lazy" alt="Tour Image" />
+      <img src="travel images/constructions workes.jpeg" alt="workers in dubai"loading="lazy" alt="Tour Image" />
+      <img src="travel images/accomodations place.png" alt="accomodations"loading="lazy" alt="Tour Image" />
+      <img src="travel images/dub.png" alt="luxury places in dubai" loading="lazy" alt="Tour Image"/>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section dark">
+    <h2>Contact Us</h2>
+    <p>Phone/WhatsApp: <strong>+233 0530304612</strong></p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61572280400747&mibextid=wwXIfr&mibextid=wwXIfr"><i class="fab fa-facebook"></i></a>
+      <a href="https://wa.me/2330530304612"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/samenbeng_group?igsh=ancxNDYweHcyb2Rh"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Samenbeng Group Travel & Tour. All rights reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    console.log("Samenbeng Travel & Tour Website Loaded");
+
+    // ===== Hamburger Menu Toggle =====
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    }
+
+    // ===== Background Image Auto-Slider =====
+    const images = [
+      'images/dubai.jpg',
+      'images/newyork.jpg',
+      'images/london.jpg',
+      'images/singapore.jpg',
+      'images/toronto.jpg'
+    ];
+
+    let currentImage = 0;
+    const hero = document.querySelector('.hero-section');
+
+    if (hero) {
+      function slideImages() {
+        currentImage = (currentImage + 1) % images.length;
+        hero.style.backgroundImage = `url('${images[currentImage]}')`;
+      }
+
+      // Initial background
+      hero.style.backgroundImage = `url('${images[0]}')`;
+
+      // Start background slider every 5 seconds
+      setInterval(slideImages, 5000);
+    }
+
+    // ===== Optional Slide Transition (e.g., for testimonials or banners) =====
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    if (slides.length > 0) {
+      function nextSlide() {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+      }
+
+      setInterval(nextSlide, 5000); // change every 5 seconds
+    }
+  });
+</script>
+
+
+  <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/2330530304612" class="whatsapp-float" target="_blank">
+  <img src="travel images/WhatsApp.svg" alt="Chat on WhatsApp">
+</a>
+
+</body>
+</html>
